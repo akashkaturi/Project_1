@@ -12,7 +12,7 @@ body {
     background-color: black;
 }
 body::-webkit-scrollbar {
-    width: 0.10rem;
+    width: 0.1rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -65,11 +65,13 @@ body::-webkit-scrollbar-thumb {
     margin: 5px;
     background-color: white;
 }
+
+/* Section_1 */
+
 #intro {
-    height: 100vh;
+    height: 90vh;
     position: relative;
     padding: 10% 0;
-    
 }
 
 #intro .top {
@@ -81,13 +83,17 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     margin: auto auto;
     align-items: center;
-   
 }
 
 #intro .h1slide {
     font-size: 4.5rem;
     font-weight: 700;
     animation: intros 1s forwards;
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 #intro .computer {
     font-size: 5rem;
@@ -112,10 +118,45 @@ body::-webkit-scrollbar-thumb {
     animation: intro1 1s forwards 2s;
     opacity: 0;
 }
+
+/* Section 2 */
+
 #us {
     height: 100vh;
-    background-color: #00ffff;
+    /* background-color: #00ffff; */
+    text-align: center;
 }
+
+#us h1 {
+    font-size: 4rem;
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+#us p {
+    font-size: 1.5rem;
+}
+#us .upperUs {
+    width: 50%;
+    /* background-color: #c471ed; */
+    margin: 0 auto;
+}
+#us .upperUs h2 {
+    font-size: 1.5rem;
+}
+#us ol {
+    position: relative;
+    text-align: left;
+    left: 5%;
+}
+#us ol li {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    opacity: 0;
+}
+
 /* Keyframes */
 
 @keyframes intros {
@@ -147,6 +188,14 @@ body::-webkit-scrollbar-thumb {
         opacity: 1;
     }
 }
+@keyframes uslist {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .nav-links {
@@ -154,7 +203,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 @media screen and (max-width: 768px) {
-    #intro{
+    #intro {
         margin-top: 5%;
         height: 80vh;
     }
