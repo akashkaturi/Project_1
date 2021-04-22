@@ -205,7 +205,7 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width: 768px) {
     #intro {
         margin-top: 5%;
-        height: 80vh;
+        height: 75vh;
     }
     #intro .introLine {
         align-items: center;
@@ -277,6 +277,23 @@ body::-webkit-scrollbar-thumb {
             transform: translateX((0px));
         }
     }
+    /* section2 */
+    #us h1{
+        font-size: 3rem;
+    }
+    #us p{
+        font-size: 1.5rem;
+    }
+    #us .upperUs{
+        margin: 0;
+        padding: 0 5%;
+        width: 100%;
+    }
+    #us .upperUs h2{
+        color: #c471ed;
+    }
+
+
 }
 .nav-links.open {
     transform: translateX(0%);
