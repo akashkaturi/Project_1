@@ -233,17 +233,16 @@ body::-webkit-scrollbar-thumb {
         font-size: 2.5rem;
     }
 
-    .nav_bar {
-        position: relative;
-    }
-    body {
-        overflow-x: hidden;
-    }
+   html,body{
+       position: relative;
+       overflow-x: hidden;
+   }
+
     .nav-links {
         z-index: 2;
-        position: fixed;
+        position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 50vh;
         width: 50%;
         top: 8vh;
         background-color: white;
