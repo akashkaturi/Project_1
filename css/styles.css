@@ -201,11 +201,15 @@ body::-webkit-scrollbar-thumb {
     .nav-links {
         width: 60%;
     }
+    #intro .h1slide {
+        font-size: 3rem;
+    }
 }
 @media screen and (max-width: 768px) {
     #intro {
-        margin-top: 5%;
-        height: 75vh;
+        margin: 25% 0;
+        height: auto;
+        
     }
     #intro .introLine {
         align-items: center;
@@ -234,12 +238,11 @@ body::-webkit-scrollbar-thumb {
         position: relative;
     }
     body {
-        background-color: black;
-        overflow-x: hidden !important;
+        overflow-x: hidden;
     }
-
     .nav-links {
-        z-index: 3;
+        
+        z-index: 2;
         position: absolute;
         right: 0px;
         height: 92vh;
@@ -278,22 +281,20 @@ body::-webkit-scrollbar-thumb {
         }
     }
     /* section2 */
-    #us h1{
-        font-size: 3rem;
+    #us h1 {
+        font-size: 2.5rem;
     }
-    #us p{
+    #us p {
         font-size: 1.5rem;
     }
-    #us .upperUs{
+    #us .upperUs {
         margin: 0;
         padding: 0 5%;
         width: 100%;
     }
-    #us .upperUs h2{
+    #us .upperUs h2 {
         color: #c471ed;
     }
-
-
 }
 .nav-links.open {
     transform: translateX(0%);
