@@ -69,16 +69,16 @@ body::-webkit-scrollbar-thumb {
 /* Section_1 */
 
 #intro {
-    height: 90vh;
+    min-height: 90vh;
     position: relative;
-    padding: 10% 0;
+    padding: 12%;
 }
 
 #intro .top {
     /* position: relative;
     left: 50%;
     top: 50%; */
-    width: 45%;
+    min-width: 45%;
     display: flex;
     justify-content: center;
     margin: auto auto;
@@ -104,7 +104,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     bottom: 6rem;
     margin: 0 auto;
-    width: 50%;
+    min-width: 50%;
 }
 #intro .introLine p:first-child {
     text-align: center;
@@ -139,22 +139,30 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.5rem;
 }
 #us .upperUs {
-    width: 50%;
     /* background-color: #c471ed; */
     margin: 0 auto;
 }
 #us .upperUs h2 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    background: #c33764; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3342c2, #c33764); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3342c2, #c33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 #us ol {
+    display: flex;
+    flex-direction: row;
     position: relative;
     text-align: left;
-    left: 5%;
+    margin-top: 5%;
 }
 #us ol li {
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin: 0 auto;
     opacity: 0;
+    list-style: none;
 }
 
 /* Keyframes */
@@ -206,43 +214,18 @@ body::-webkit-scrollbar-thumb {
     }
 }
 @media screen and (max-width: 768px) {
-    #intro {
-        margin: 25% 0;
-        height: auto;
+    html,
+    body {
+        position: relative;
+        overflow-x: hidden;
     }
-    #intro .introLine {
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        width: 90%;
-        animation: intro1 1s forwards 1s;
-        opacity: 0;
-    }
-    #intro .introLine p:nth-child(2) {
-        font-size: 1.5rem;
-        color: #00ffff;
-        margin-top: 1rem;
-    }
-    #intro .top {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-    }
-    #intro .h1slide,
-    .computer {
-        font-size: 2.5rem;
-    }
-
-   html,body{
-       position: relative;
-       overflow-x: hidden;
-   }
 
     .nav-links {
         z-index: 2;
         position: absolute;
         right: 0px;
-        height: 50vh;
+        min-height: 50vh;
+        border-radius: 0 0 0 5%;
         width: 50%;
         top: 8vh;
         background-color: white;
@@ -298,6 +281,34 @@ body::-webkit-scrollbar-thumb {
             transform: translateX(0px);
         }
     }
+    /* section1 */
+    #intro {
+        margin: 25% 0;
+        min-height: 60vh;
+        padding: 0;
+    }
+
+    #intro .top {
+        display: flex;
+        flex-direction: column;
+    }
+    #intro .h1slide,
+    .computer {
+        font-size: 3rem;
+    }
+    #intro .introLine {
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+
+        animation: intro1 1s forwards 1s;
+        opacity: 0;
+    }
+    #intro .introLine p:nth-child(2) {
+        font-size: 1.3rem;
+        color: #00ffff;
+        margin-top: 1rem;
+    }
     /* section2 */
     #us h1 {
         font-size: 2.5rem;
@@ -310,7 +321,17 @@ body::-webkit-scrollbar-thumb {
         padding: 0 5%;
         width: 100%;
     }
+    #us .upperUs ol {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #us .upperUs ol li {
+        font-size: 1.4rem;
+        margin: 2% auto;
+        
+    }
     #us .upperUs h2 {
-        color: #c471ed;
+        font-size: 1.7rem;
     }
 }
