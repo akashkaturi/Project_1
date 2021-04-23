@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@
     scroll-behavior: smooth;
     font-size: 1em;
     color: white;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 body {
     background-color: black;
@@ -68,27 +69,27 @@ body::-webkit-scrollbar-thumb {
 
 /* Section_1 */
 
-#intro {
+.intro {
     display: flex;
     flex-direction: column;
-    padding: 12% 0;
     min-height: 90vh;
-    position: relative;
-    
+    justify-content: center;
+    align-items: center;
 }
 
-#intro .top {
+.intro .top {
     /* position: relative;
     left: 50%;
     top: 50%; */
 
   
-   display: flex;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
-#intro .h1slide {
+.intro .h1slide {
     font-size: 4.5rem;
     font-weight: 700;
     animation: intros 1s forwards;
@@ -98,23 +99,21 @@ body::-webkit-scrollbar-thumb {
     -webkit-background-clip: text;
     background-clip: text;
 }
-#intro .computer {
-    font-size: 5rem;
+.intro .computer {
+    font-size: 4rem;
     animation: comprot 1s forwards;
 }
-#intro .introLine {
+.intro .introLine {
     min-width: 50%;
-   
-    margin-bottom: auto;
-
 }
-#intro .introLine p:first-child {
+.intro .introLine p:first-child {
     text-align: center;
     font-size: 2rem;
     animation: intro1 1s forwards 1s;
     opacity: 0;
 }
-#intro .introLine p:nth-child(2) {
+.intro .introLine p:nth-child(2) {
+    padding: 0 35vh;
     text-align: center;
     font-size: 2rem;
     animation: intro1 1s forwards 2s;
@@ -186,7 +185,7 @@ body::-webkit-scrollbar-thumb {
         transform: rotate(360deg);
     }
     to {
-        font-size: 5rem;
+        font-size: 4.5rem;
         margin-top: 0%;
         transform: rotate(0deg);
     }
@@ -212,7 +211,7 @@ body::-webkit-scrollbar-thumb {
     .nav-links {
         width: 60%;
     }
-    #intro .h1slide {
+    .intro .h1slide {
         font-size: 3rem;
     }
 }
@@ -285,31 +284,42 @@ body::-webkit-scrollbar-thumb {
         }
     }
     /* section1 */
-    #intro {
-        margin: 25% 0;
-        min-height: 60vh;
+    .intro {
+        min-height: 90vh;
         padding: 0;
     }
 
-    #intro .top {
+    .intro .top {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    #intro .h1slide,
-    .computer {
-        font-size: 3rem;
+    .intro .top .h1slide {
+        font-size: 2.5rem;
     }
-    #intro .introLine {
+    .intro .top .computer {
+    animation: comprot 1s forwards;
+}
+    .intro .introLine {
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-
         animation: intro1 1s forwards 1s;
         opacity: 0;
     }
-    #intro .introLine p:nth-child(2) {
+    .intro .introLine p:nth-child(1) {
+        font-size: 1.8rem;
+    }
+    .intro .introLine p:nth-child(2) {
+        padding: 0;
         font-size: 1.3rem;
-        color: #00ffff;
+        background: #ffefba; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #ffffff, #ffefba); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #ffffff, #ffefba); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
         margin-top: 1rem;
     }
     /* section2 */
@@ -335,5 +345,16 @@ body::-webkit-scrollbar-thumb {
     }
     #us .upperUs h2 {
         font-size: 1.7rem;
+    }
+    @keyframes comprot {
+    from {
+        font-size: 0.5rem;
+        margin-top: 100%;
+        transform: rotate(360deg);
+    }
+    to {
+        font-size: 3.5rem;
+        margin-top: 0%;
+        transform: rotate(0deg);
     }
 }
