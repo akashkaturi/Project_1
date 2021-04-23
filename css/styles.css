@@ -83,7 +83,6 @@ body::-webkit-scrollbar-thumb {
     left: 50%;
     top: 50%; */
 
-  
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -91,7 +90,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .intro .h1slide {
-    
     font-size: 4.5rem;
     font-weight: 700;
     animation: intros 1s forwards;
@@ -123,39 +121,38 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 7rem;
 }
 
-.intro .hello h1{
+.intro .hello h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 7.5rem;
     justify-self: flex-end;
     opacity: 0;
     animation: hello 1s forwards 2.5s;
-    background: #833ab4;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: #833ab4; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
 @keyframes hello {
-    from{
+    from {
         opacity: 0;
     }
-    to{
+    to {
         opacity: 1;
     }
 }
 /* Section 2 */
-#us .hello h1{
-font-family: 'Dancing Script', cursive;
+#us .hello h1 {
+    font-family: 'Dancing Script', cursive;
     font-size: 7.5rem;
     justify-self: flex-end;
-    background: #833ab4;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: #833ab4; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    
 }
 #us {
     height: 90vh;
@@ -179,10 +176,7 @@ font-family: 'Dancing Script', cursive;
 #us p {
     font-size: 1.5rem;
 }
-#us .upperUs {
-    /* background-color: #c471ed; */
-   
-}
+
 #us .upperUs h2 {
     margin-top: 1rem;
     font-size: 2.5rem;
@@ -199,8 +193,6 @@ font-family: 'Dancing Script', cursive;
     position: relative;
     text-align: left;
     margin-top: 2rem;
-    
-    
 }
 #us ol li {
     font-size: 2rem;
@@ -210,7 +202,7 @@ font-family: 'Dancing Script', cursive;
 }
 /* section3 */
 
-#join{
+#join {
     min-height: 80vh;
     background-color: antiquewhite;
 }
@@ -346,8 +338,8 @@ font-family: 'Dancing Script', cursive;
         font-size: 2.5rem;
     }
     .intro .top .computer {
-    animation: comprot 1s forwards;
-}
+        animation: comprot 1s forwards;
+    }
     .intro .introLine {
         align-items: center;
         justify-content: center;
@@ -370,9 +362,9 @@ font-family: 'Dancing Script', cursive;
         margin-top: 1rem;
         margin-bottom: 4rem;
     }
-    
+
     /* section2 */
-    #us .hello h1{
+    #us .hello h1 {
         font-size: 3.5rem;
     }
     #us .welcome h1 {
@@ -401,14 +393,15 @@ font-family: 'Dancing Script', cursive;
         font-size: 1.7rem;
     }
     @keyframes comprot {
-    from {
-        font-size: 0.5rem;
-        margin-top: 100%;
-        transform: rotate(360deg);
-    }
-    to {
-        font-size: 3.5rem;
-        margin-top: 0%;
-        transform: rotate(0deg);
+        from {
+            font-size: 0.5rem;
+            margin-top: 100%;
+            transform: rotate(360deg);
+        }
+        to {
+            font-size: 3.5rem;
+            margin-top: 0%;
+            transform: rotate(0deg);
+        }
     }
 }
