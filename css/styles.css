@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@
     scroll-behavior: smooth;
     font-size: 1em;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: sans-serif;
 }
 body {
     background-color: black;
@@ -72,7 +73,7 @@ body::-webkit-scrollbar-thumb {
 .intro {
     display: flex;
     flex-direction: column;
-    min-height: 90vh;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
 }
@@ -90,6 +91,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .intro .h1slide {
+    
     font-size: 4.5rem;
     font-weight: 700;
     animation: intros 1s forwards;
@@ -118,17 +120,55 @@ body::-webkit-scrollbar-thumb {
     font-size: 2rem;
     animation: intro1 1s forwards 2s;
     opacity: 0;
+    margin-bottom: 7rem;
 }
 
+.intro .hello h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 7.5rem;
+    justify-self: flex-end;
+    opacity: 0;
+    animation: hello 1s forwards 2.5s;
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+@keyframes hello {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 /* Section 2 */
-
+#us .hello h1{
+font-family: 'Dancing Script', cursive;
+    font-size: 7.5rem;
+    justify-self: flex-end;
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+}
 #us {
-    height: 100vh;
-    /* background-color: #00ffff; */
+    height: 90vh;
+    /* background-color: #12c2e9; */
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#us h1 {
+#us .welcome h1 {
+    margin-top: 6rem;
     font-size: 4rem;
     background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -141,7 +181,7 @@ body::-webkit-scrollbar-thumb {
 }
 #us .upperUs {
     /* background-color: #c471ed; */
-    margin: 0 auto;
+   
 }
 #us .upperUs h2 {
     margin-top: 1rem;
@@ -158,15 +198,22 @@ body::-webkit-scrollbar-thumb {
     flex-direction: row;
     position: relative;
     text-align: left;
-    margin-top: 5%;
+    margin-top: 2rem;
+    
+    
 }
 #us ol li {
     font-size: 2rem;
-    margin: 0 auto;
+    margin: 0 50px;
     opacity: 0;
     list-style: none;
 }
+/* section3 */
 
+#join{
+    min-height: 80vh;
+    background-color: antiquewhite;
+}
 /* Keyframes */
 
 @keyframes intros {
@@ -321,13 +368,20 @@ body::-webkit-scrollbar-thumb {
         -webkit-background-clip: text;
         background-clip: text;
         margin-top: 1rem;
+        margin-bottom: 4rem;
     }
+    
     /* section2 */
-    #us h1 {
-        font-size: 2.5rem;
+    #us .hello h1{
+        font-size: 3.5rem;
+    }
+    #us .welcome h1 {
+        font-size: 2.3rem;
+        margin-top: 3.5rem;
     }
     #us p {
         font-size: 1.5rem;
+        margin-top: 2rem;
     }
     #us .upperUs {
         margin: 0;
