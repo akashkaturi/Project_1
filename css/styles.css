@@ -69,19 +69,22 @@ body::-webkit-scrollbar-thumb {
 /* Section_1 */
 
 #intro {
+    display: flex;
+    flex-direction: column;
+    padding: 12% 0;
     min-height: 90vh;
     position: relative;
-    padding: 12%;
+    
 }
 
 #intro .top {
     /* position: relative;
     left: 50%;
     top: 50%; */
-    min-width: 45%;
-    display: flex;
+
+  
+   display: flex;
     justify-content: center;
-    margin: auto auto;
     align-items: center;
 }
 
@@ -100,11 +103,10 @@ body::-webkit-scrollbar-thumb {
     animation: comprot 1s forwards;
 }
 #intro .introLine {
-    align-items: center;
-    justify-content: center;
-    bottom: 6rem;
-    margin: 0 auto;
     min-width: 50%;
+   
+    margin-bottom: auto;
+
 }
 #intro .introLine p:first-child {
     text-align: center;
@@ -143,10 +145,11 @@ body::-webkit-scrollbar-thumb {
     margin: 0 auto;
 }
 #us .upperUs h2 {
+    margin-top: 1rem;
     font-size: 2.5rem;
-    background: #c33764; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #3342c2, #c33764); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #3342c2, #c33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #8a2387; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f27121, #e94057, #8a2387); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f27121, #e94057, #8a2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -329,7 +332,6 @@ body::-webkit-scrollbar-thumb {
     #us .upperUs ol li {
         font-size: 1.4rem;
         margin: 2% auto;
-        
     }
     #us .upperUs h2 {
         font-size: 1.7rem;
