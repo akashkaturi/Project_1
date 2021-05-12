@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
     font-size: 1em;
     color: white;
-    font-family: sans-serif;
+    font-family: msans-serif;
 }
 body {
     background-color: black;
@@ -204,6 +204,7 @@ body::-webkit-scrollbar-thumb {
 
 #join {
     min-height: 80vh;
+    background-color: blue;
 
 }
 /* Keyframes */
